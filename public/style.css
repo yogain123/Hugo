@@ -1,0 +1,301 @@
+/*!
+ * Start Bootstrap - Landing Page Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+.lead {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.intro-header {
+    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-bottom: 50px;
+    text-align: center;
+    color: #f8f8f8;
+    background: url(./img/intro-bg.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.intro-message {
+    position: relative;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+.intro-message > h1 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 5em;
+}
+
+.intro-divider {
+    width: 400px;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.intro-message > h3 {
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+
+@media(max-width:767px) {
+    .intro-message {
+        padding-bottom: 15%;
+    }
+
+    .intro-message > h1 {
+        font-size: 3em;
+    }
+
+    ul.intro-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.intro-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+
+    .intro-divider {
+        width: 100%;
+    }
+}
+
+.network-name {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.content-section-a {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+.content-section-b {
+    padding: 50px 0;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.section-heading {
+    margin-bottom: 30px;
+}
+
+.section-heading-spacer {
+    float: left;
+    width: 200px;
+    border-top: 3px solid #e7e7e7;
+}
+
+.contact {
+    padding: 100px 0;
+    color: #f8f8f8;
+    background: url(../img/contact-bg.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.contact h2 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 3em;
+}
+
+.contact ul {
+    margin-bottom: 0;
+}
+
+.contact-social-buttons {
+    float: right;
+    margin-top: 0;
+}
+
+@media(max-width:1199px) {
+    ul.contact-social-buttons {
+        float: left;
+        margin-top: 15px;
+    }
+}
+
+@media(max-width:767px) {
+    .contact h2 {
+        margin: 0;
+        text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+        font-size: 3em;
+    }
+
+    ul.contact-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.contact-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+footer {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+p.copyright {
+    margin: 15px 0 0;
+}
+
+
+/* Tables
+The responsive tables part has been taken from
+https://css-tricks.com/accessible-simple-responsive-tables/
+and changed to our needs.
+We focus on "Responsive collapse (by column)" in this case here.
+The original LESS code is compiled to CSS here and all (most) not
+relevant parts are removed. Still some of the basics (e.g. Rtable-cell--foot)
+are kept in here in case we use them later.
+================================== */
+
+/*@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,700); */
+
+.Rtable {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 0 3em 0;
+  padding: 0;
+}
+.Rtable-cell {
+  box-sizing: border-box;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  width: 100%;
+  padding: 0.8em 1.2em;
+  overflow: hidden;
+  list-style: none;
+  border: solid 1px white;
+  background: rgba(112, 128, 144, 0.2);
+}
+.Rtable-cell > h1,
+.Rtable-cell > h2,
+.Rtable-cell > h3,
+.Rtable-cell > h4,
+.Rtable-cell > h5,
+.Rtable-cell > h6 {
+  margin: 0;
+}
+/* Table column sizing
+================================== */
+.Rtable--2cols > .Rtable-cell {
+  width: 50%;
+}
+.Rtable--3cols > .Rtable-cell {
+  width: 33.33%;
+}
+.Rtable--4cols > .Rtable-cell {
+  width: 25%;
+}
+.Rtable--5cols > .Rtable-cell {
+  width: 20%;
+}
+.Rtable--6cols > .Rtable-cell {
+  width: 16.6%;
+}
+
+/* Apply styles
+================================== */
+.Rtable {
+  position: relative;
+  border-radius: 5px;
+  top: 3px;
+  left: 3px;
+}
+.Rtable-cell {
+  margin: -3px 0 1 -3px;
+  background-color: white;
+  border-color: #ebccd1;
+}
+/* Cell styles
+================================== */
+.Rtable-cell--head {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+  padding: 10px 15px;
+  border-bottom: 1px solid transparent;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.Rtable-cell--head > h1,
+.Rtable-cell--head > h2,
+.Rtable-cell--head > h3,
+.Rtable-cell--head > h4,
+.Rtable-cell--head > h5,
+.Rtable-cell--head > h6 {
+  color: #a94442;
+}
+.Rtable-cell--foot {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+/* Responsive
+==================================== */
+@media all and (max-width: 500px) {
+  .Rtable--collapse {
+    display: block;
+  }
+  .Rtable--collapse > .Rtable-cell {
+    width: 100% !important;
+  }
+  .Rtable--collapse > .Rtable-cell--foot {
+    margin-bottom: 1em;
+  }
+}
+
+/* This part is for the Signup Button in the pricing section. Added by matgnt@gmail.com */
+button.pricing {
+    width: 100%;
+    background-image: linear-gradient(to bottom,#5cb85c 0,#419641 100%);
+    background-repeat: repeat-x;
+    border-radius: 6px;
+    padding: 12px 12px;
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    border: none;
+}
+button.pricing:hover, button.pricing:active {
+    background-image: linear-gradient(to bottom,#449d44 0,#419641 100%);
+}
+button.pricing > a,
+button.pricing > a:hover,
+button.pricing > a:active,
+button.pricing > a:visited {
+    color: #fff;
+    text-decoration: none;
+}
